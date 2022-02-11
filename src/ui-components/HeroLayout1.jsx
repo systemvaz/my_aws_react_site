@@ -12,7 +12,15 @@ import {
 } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function HeroLayout1(props) {
-  const { imageSrc, overrides: overridesProp, ...rest } = props;
+  const {
+    imageSrc,
+    topTxt,
+    middleTxt,
+    bottomTxt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    buttonTxt = "Find Out More",
+    overrides: overridesProp,
+    ...rest
+  } = props;
   const variants = [
     {
       overrides: {
@@ -124,7 +132,7 @@ export default function HeroLayout1(props) {
             alignSelf="stretch"
             position="relative"
             padding="0px 0px 0px 0px"
-            children="LOREM IPSUM"
+            children={topTxt}
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Text[0]")}
           ></Text>
           <Flex
@@ -153,7 +161,7 @@ export default function HeroLayout1(props) {
               alignSelf="stretch"
               position="relative"
               padding="0px 0px 0px 0px"
-              children="Ut enim ad minim veniam quis nostrud"
+              children={middleTxt}
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[0].Flex[0].Flex[0].Text[0]"
@@ -175,7 +183,7 @@ export default function HeroLayout1(props) {
               alignSelf="stretch"
               position="relative"
               padding="0px 0px 0px 0px"
-              children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+              children={bottomTxt}
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[0].Flex[0].Flex[0].Text[1]"
@@ -188,7 +196,7 @@ export default function HeroLayout1(props) {
             width="206px"
             size="large"
             variation="primary"
-            children="Primary Button"
+            children={buttonTxt}
             {...getOverrideProps(overrides, "Flex.Flex[0].Flex[0].Button[0]")}
           ></Button>
         </Flex>

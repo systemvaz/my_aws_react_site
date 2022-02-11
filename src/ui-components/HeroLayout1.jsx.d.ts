@@ -9,6 +9,10 @@ import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type HeroLayout1Props = React.PropsWithChildren<Partial<FlexProps> & {
     imageSrc?: String;
+    topTxt?: String;
+    middleTxt?: String;
+    bottomTxt?: String;
+    buttonTxt?: String;
 } & {
     mode?: "Dark" | "Light";
 } & {

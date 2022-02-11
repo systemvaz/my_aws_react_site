@@ -16,7 +16,7 @@ export default function NavBar(props) {
       gap="20px"
       direction="row"
       width="1440px"
-      height="85px"
+      height="103px"
       justifyContent="center"
       alignItems="center"
       position="relative"
@@ -27,8 +27,8 @@ export default function NavBar(props) {
       {...getOverrideProps(overrides, "Flex")}
     >
       <Image
-        width="142px"
-        height="80px"
+        width="144px"
+        height="102px"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
@@ -49,7 +49,7 @@ export default function NavBar(props) {
         <Text
           fontFamily="Inter"
           fontSize="18.106657028198242px"
-          fontWeight="400"
+          fontWeight="500"
           color="rgba(0,63.750030398368835,76.50000303983688,1)"
           lineHeight="27.15998649597168px"
           textAlign="left"
@@ -68,7 +68,7 @@ export default function NavBar(props) {
         <Text
           fontFamily="Inter"
           fontSize="18.106657028198242px"
-          fontWeight="400"
+          fontWeight="500"
           color="rgba(0,63.750030398368835,76.50000303983688,1)"
           lineHeight="27.15998649597168px"
           textAlign="left"
@@ -87,7 +87,7 @@ export default function NavBar(props) {
         <Text
           fontFamily="Inter"
           fontSize="18.106657028198242px"
-          fontWeight="400"
+          fontWeight="500"
           color="rgba(0,63.750030398368835,76.50000303983688,1)"
           lineHeight="27.15998649597168px"
           textAlign="left"
@@ -106,7 +106,7 @@ export default function NavBar(props) {
         <Text
           fontFamily="Inter"
           fontSize="18.106657028198242px"
-          fontWeight="400"
+          fontWeight="500"
           color="rgba(0,63.750030398368835,76.50000303983688,1)"
           lineHeight="27.15998649597168px"
           textAlign="left"
@@ -126,11 +126,11 @@ export default function NavBar(props) {
       <Flex
         gap="32px"
         direction="row"
-        width="766px"
+        width="764px"
         justifyContent="flex-end"
         alignItems="center"
         grow="1"
-        basis="766px"
+        basis="764px"
         height="24px"
         position="relative"
         padding="0px 0px 0px 0px"

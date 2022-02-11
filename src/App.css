@@ -3,7 +3,7 @@
 }
 
 .App-banner {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .App-header {
@@ -19,7 +19,7 @@
 }
 
 span {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
